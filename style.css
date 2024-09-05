@@ -3,6 +3,8 @@ body{
     box-sizing: border-box;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+/* Sidebar */
+
 .sidebar{
     width: 200px;
    border-right: 1px solid lightgray;
@@ -28,6 +30,9 @@ body{
     border-radius: 40px;
     width: 26px;
 }
+
+/* main-Section */
+
 .feed{
     width: 730px;
     margin: auto;
@@ -38,10 +43,6 @@ body{
     margin-top: 40px;
     width: 300px;
 }
-.feed-content{
-    margin-top: 40px;
-    width: 380px;
-}
 .profile-img{
     height: 150px;
     border-radius: 50%;
@@ -49,10 +50,14 @@ body{
     margin-left: 70px;
     border: 1px solid lightgrey;
 }
+.feed-content{
+    margin-top: 40px;
+    width: 380px;
+}
 .user{
     display: flex;
     align-items: center;
-    gap:20px
+    gap:20px;
 }
 .user-name{
     display: flex;
@@ -128,7 +133,7 @@ b{
     gap: 7px;
     align-items: center;
 }
-a{
+.link{
     text-decoration: none;
     color: #00376b;
     font-size: 14px;
@@ -141,16 +146,18 @@ a{
     font-size: 12px;
     color: #737373;
 }
+
+/* stories */
+
+.story-feed{
+    width: 570px;
+    margin: 50px auto;
+    display: flex;
+    gap:50px;
+}
 .circle-color{
     padding: 40px;
     border-radius: 40px;
-}
-.story-feed{
-    margin: 50px auto;
-    margin-left: 340px;
-    width: 730px;
-    display: flex;
-    gap:50px;
 }
 .first{
     background-color: #4284f4;
@@ -173,12 +180,18 @@ hr{
     width: 890px;
     margin-left: 300px;
     margin-top: 50px;
+    margin-bottom: 0;
 }
+
+ /* Selection-content */
+
 .section{
     width: 890px;
+    margin: 10px auto;
     display: flex;
     justify-content: center;
-    margin-left: 280px;
+    margin-left: 300px;
+    margin-top: 0;
     gap:50px;
 }
 .selection{
@@ -194,20 +207,23 @@ hr{
 .text-color{
     color: #737373;
 }
+
+/* Post Feed */
+
 .post-feed{
-    width: 890px;
-    margin-left: 300px;
+    width: 660px;
+    margin: auto;
 }
 .post{
     width: 396px;
-    height: 386px;
+    height: 296px;
     position: relative;
 }
 .post-img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center;
+    object-position: 0px 27%;
 }
 .pin-icon{
     position: absolute;
@@ -233,9 +249,16 @@ hr{
     gap: 4px;
     margin-bottom: 4px;
 }
-.footer-content{
+
+/* Footer Section */
+
+.footer{
+    width: 890px;
     margin: 50px auto;
-    margin-left: 310px;
+    margin-left: 300px;
+}
+.footer-content{
+    margin: auto;
     display: flex;
     font-size: 12px;
     color: #737373;
@@ -244,16 +267,15 @@ hr{
 }
 .lower-content{
     margin: auto;
-    margin-left: 310px;
     display: flex;
     justify-content: center;
     font-size: 12px;
     color: #737373;
-    gap:20px;
+     gap:20px;
     margin-bottom: 20px;
-}
+} 
 .language{
     display: flex;
     align-items: center;
     gap:3px;
-}
+} 
